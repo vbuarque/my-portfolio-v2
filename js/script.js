@@ -35,3 +35,13 @@ function scrollToTop() {
     behavior: "smooth",
   })
 }
+
+/* Função para ativar o link do nav menu*/
+const activeLink = document.querySelectorAll(".nav-link")
+
+activeLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    activeLink.forEach((link) => link.classList.remove("active"))
+    link.classList.add("active")
+  })
+})

@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  transition: all 0.2s;
 }
 
 body {
@@ -23,12 +21,18 @@ header {
   --background-dark: #29292e;
   --text: #29292e;
   --text-light: #f8f8f8;
-  --text-light: #f8f8f8;
   --button-hover: #535962;
+  --link-active: #f8f8f8;
   --highlight-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Estilização menu */
+.header{
+  position: fixed;
+  width: 100%;
+
+  z-index: 999;
+}
 .nav-menu {
   display: flex;
   justify-content: space-around;
@@ -70,6 +74,22 @@ header {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  text-decoration: underline solid var(--link-active) 2px;
+  text-underline-offset: 0.4rem;
+
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.nav-link.active {
+  text-decoration: underline solid var(--link-active) 2px;
+  text-underline-offset: 0.4rem;
+
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
 .mobile-menu-icon {
   display: none;
 }
@@ -94,7 +114,7 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 0rem 1rem 0rem 1rem;
-  height: 85%;
+  height: 90%;
 }
 
 .presentation-image {
@@ -271,6 +291,14 @@ header {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+
+    padding-top: 6.25rem;
+    
+    height: 100vh;
+  }
+
+  .scroll-down-button {
+    display: none;
   }
 
   .presentation-content {
@@ -317,9 +345,6 @@ header {
   }
 
   .presentation-image {
-    width: 250px;
-    height: 250px;
-
     margin-bottom: 1.5rem;
   }
 }
@@ -334,12 +359,12 @@ header {
   }
 
   .presentation-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 
   .presentation-layer {
-    height: 80%;
+    padding-top: 0rem;
   }
 }
 
@@ -347,18 +372,12 @@ header {
   .presentation-content p {
     font-size: 1.2rem;
   }
-
   .presentation-content h1 {
     font-size: 2rem;
   }
 
-  .presentation-image {
-    width: 200px;
-    height: 200px;
-  }
-
   .presentation-layer {
-    height: 75%;
+    padding-top: 3.125rem;
   }
 }
 
@@ -379,25 +398,25 @@ header {
 
 @media screen and (max-height: 750px) {
   .presentation-layer {
-    height: 80%;
+    padding-top: 6.25rem;
   }
 }
 
 @media screen and (max-height: 720px) {
   .presentation-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 
 }
 
 @media screen and (max-height: 700px) {
   .presentation-layer {
-    height: 80%;
+    height: 100vh;
+    padding-top: 3.75rem;
   }
 
-  .presentation-image {
-    width: 150px;
-    height: 150px;
+  .scroll-down-button {
+    display: none;
   }
 }
