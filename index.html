@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav class="nav-menu">
       <div class="logo">
         <h1>Vinicius B.</h1>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="mobile-menu-icon">
-        <button onclick="menuShow()">
+        <button onclick="menuShow()" class="btn-close-open">
           <ion-icon name="menu-outline" class="icon"></ion-icon>
         </button>
       </div>
@@ -44,6 +44,49 @@
       </ul>
     </div>
   </header>
+
+  <main class="container">
+    <div class="presentation-layer">
+      <div class="presentation-content">
+        <p>Olá, me chamo</p>
+        <h1>Vinícius Buarque</h1>
+        <p>Desenvolvedor web e mobile</p>
+        <a class="btn-cv" href="./assets/CurriculoViniciusBuarque.pdf" target="_blank">Download CV</a>
+        
+        <div class="social-media-icons">
+          <button class="btn-icons">
+            <a href="https://github.com/vbuarque/" target="_blank">
+              <ion-icon name="logo-github" class="icon"></ion-icon>
+            </a>
+          </button>
+          <button class="btn-icons">
+            <a href="https://linkedin.com/in/vbgusmao/" target="_blank">
+              <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+            </a>
+          </button>
+          <button class="btn-icons">
+            <a href="https://twitter.com/vbuarqu3" target="_blank">
+              <ion-icon name="logo-twitter" class="icon"></ion-icon>
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="presentation-image">
+        <img src="./assets/images/meAvatar.png" alt="">
+      </div>
+    </div>
+    <div class="scroll-down-button">
+      <button onclick="scrollDown()">
+        <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+      </button>
+    </div>
+  </main>
+
+  <button class="scroll-up show-scroll" onclick="scrollToTop()">
+    <ion-icon name="chevron-up-outline" class="icon"></ion-icon>
+  </button>
+
+  <div class="container"></div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
