@@ -236,7 +236,7 @@ header {
 }
 
 /*Webkit de animação*/
-@-webkit-keyframes moveUp {
+@keyframes moveUp {
   0% {
     transform: translateY(0);
   }
