@@ -12,29 +12,24 @@ function menuShow() {
 
 /* Função para realizar o scroll down da página */
 function scrollDown() {
-  window.scrollTo( {
+  window.scrollTo({
     top: 1080,
-    behavior: "smooth"
+    behavior: "smooth",
   })
 }
 
 /* Função para realiza o scroll up da página */
-const scrollUp = document.querySelector(".scroll-up");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 540) {
-    scrollUp.classList.add("show-scroll");
+document.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    document.getElementById("scroll-up").style.display = "block"
   } else {
-    scrollUp.classList.remove("show-scroll");
+    document.getElementById("scroll-up").style.display = "none"
   }
-});
+})
 
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  })
-}
+document.getElementById("scroll-up").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" })
+})
 
 /* Função para ativar o link do nav menu*/
 const activeLink = document.querySelectorAll(".nav-link")
