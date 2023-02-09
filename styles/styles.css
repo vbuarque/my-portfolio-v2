@@ -28,10 +28,7 @@ header {
 
 /* Estilização menu */
 .header {
-  position: fixed;
   width: 100%;
-
-  z-index: 999;
 }
 
 .nav-menu {
@@ -39,7 +36,6 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 2rem 0rem;
-
   background: var(--background-dark);
 }
 
@@ -105,17 +101,18 @@ header {
 }
 
 /* Estilização home */
-
 .container {
-  height: calc(100vh);
+  height: 100vh;
 }
 
 .presentation-layer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
+
   padding: 0rem 1rem 0rem 1rem;
-  height: 90%;
+
+  height: calc(100% - 10rem);
 }
 
 .presentation-image {
@@ -137,9 +134,10 @@ header {
 }
 
 .scroll-down-button {
-  display: flex;
-  justify-content: center;
-  height: 7vh;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .presentation-content {
@@ -249,6 +247,54 @@ header {
   animation: moveUp 0.5s ease-in-out infinite;
 }
 
+/* Estilização sobre mim */
+
+.container-about {
+  height: 100vh;
+}
+
+.header-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+  box-shadow: none;
+}
+
+.about-session-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  padding: 2rem 0rem;
+}
+
+.about-content {
+  max-width: 800px;
+  padding-bottom: 2rem;
+  border-bottom: 5px solid var(--text);
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text);
+  padding-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text);
+  padding-bottom: 1rem;
+
+
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+
 /*Webkit de animação*/
 @keyframes moveUp {
   0% {
@@ -303,6 +349,10 @@ header {
     border-left: none;
     padding: 0;
   }
+
+ 
+
+
 }
 
 @media screen and (max-width: 730px) {
@@ -414,4 +464,23 @@ header {
   .scroll-down-button {
     display: none;
   }
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-dark);
+  border-radius: 1rem; 
+
+  border: 3px solid #fff;
 }
