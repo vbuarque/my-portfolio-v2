@@ -12,10 +12,7 @@ function menuShow() {
 
 /* Função para realizar o scroll down da página */
 function scrollDown() {
-  window.scrollTo({
-    top: 1050,
-    behavior: "smooth",
-  })
+  window.scrollTo({ top: 1000, behavior: "smooth" })
 }
 
 /* Função para realiza o scroll up da página */

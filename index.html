@@ -45,70 +45,66 @@
     </div>
   </header>
 
-  <main class="container" id="home">
-    <div class="presentation-layer">
-      <div class="presentation-content">
-        <p>Olá, me chamo</p>
-        <h1>Vinícius Buarque</h1>
-        <p>Desenvolvedor web e mobile</p>
-        <div class="border-btn"><a class="btn-cv" href="./assets/CurriculoViniciusBuarque.pdf" target="_blank">Download CV</a></div>
-       
-
-        <div class="social-media-icons">
-          <button class="btn-icons">
-            <a href="https://github.com/vbuarque/" target="_blank">
-              <ion-icon name="logo-github" class="icon"></ion-icon>
-            </a>
-          </button>
-          <button class="btn-icons">
-            <a href="https://linkedin.com/in/vbgusmao/" target="_blank">
-              <ion-icon name="logo-linkedin" class="icon"></ion-icon>
-            </a>
-          </button>
-          <button class="btn-icons">
-            <a href="https://twitter.com/vbuarqu3" target="_blank">
-              <ion-icon name="logo-twitter" class="icon"></ion-icon>
-            </a>
-          </button>
+  <div class="container-home" id="home">
+    <div class="home-content">
+      <div class="home-presentation">
+        <div class="border-left"></div>
+        <div class="home-presentation-section">
+          <span id="span-hello">Olá, me chamo</span>
+          <h1>Vinicius B.</h1>
+          <span id="span-dev">Desenvolvedor Web/Mobile</span>
+          <a href="./assets/CurrículoViniciusBuarque.pdf" target="_blank">Download CV</a>
         </div>
       </div>
-      <div class="presentation-image">
-        <img src="./assets/images/meAvatar.png" alt="">
+
+      <div class="social-media-icons">
+        <a href="https://www.linkedin.com/in/vbgusmao/" target="_blank">
+          <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+        </a>
+        <a href="https://github.com/vbuarque" target="_blank">
+          <ion-icon name="logo-github" class="icon"></ion-icon>
+        </a>
+        <a href="https://twitter.com/vbuarqu3" target="_blank">
+          <ion-icon name="logo-twitter" class="icon"></ion-icon>
+        </a>
+      </div>
+
+      <div class="home-image">
+        <img src="./assets/images/meAvatar.png"
+          alt="Foto do Vinicius Buarque, usando óculos de grau e camisa social branca e preta.">
       </div>
     </div>
-    <div class="scroll-down-button">
-      <button onclick="scrollDown()">
-        <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
-      </button>
-    </div>
-  </main>
 
+    <button id="btn-scroll-down" onclick="scrollDown()">
+      <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+    </button>
+  </div>
 
   <div class="container-about" id="about">
-    <header class="header-section">
-      <h1>Sobre mim</h1>
-    </header>
-    
-    <div class="about-session-content">
-      <div class="presentation-image about-img">
-        <img src="./assets/images/meAvatar.png" alt="">
+    <div class="about-content">
+      <div class="home-image about-color">
+        <img src="./assets/images/meAvatar.png"
+          alt="Foto do Vinicius Buarque, usando óculos de grau e camisa social branca e preta.">
       </div>
-      <div class="about-content">
-        <h1>Olá, eu sou</h1>
-        <p>Desenvolvedor web apaixonado por construir soluções incríveis e inovadoras.
-        Tenho 2 anos de experiência na área, com base em projetos realizados, e sempre estou em busca de novos desafios e aprendizados.
-        Além disso, sou formado em técnico de informatica pelo <strong>SENAC</strong> aonde minha paixão por técnologia e programação começaram, estou me graduando pela <strong>FATEC</strong> no curso de <strong>Desenvolvimento de Software Multiplataforma</strong>.</p>
+
+      <div class="about-presentation">
+        <div class="about-presentation-section">
+          <h1>Um pouco sobre mim...</h1>
+          <p>Aficionado por programação e resolução de problemas , sempre buscando
+            pontualidade, comunicação e trabalho em equipe.
+            <p>Sou formado em técnico de informatica pelo <strong>SENAC</strong> onde minha paixão por
+            tecnologia e programação começaram. Estou me graduando pela <strong>FATEC</strong> no
+            curso de <strong>Desenvolvimento de Software Multiplataforma</strong>.</p>
+          </p>
+        </div>
+        <div class="border-bottom"></div>
       </div>
     </div>
   </div>
 
-  <div class="container" id="portfolio"></div>
-
   <button id="scroll-up">
     <ion-icon name="chevron-up-outline" class="icon"></ion-icon>
   </button>
-
-
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
