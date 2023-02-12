@@ -300,7 +300,7 @@ body * {
   font-size: 2rem;
   font-weight: 700;
   color: var(--text);
-  
+
 }
 
 .about-presentation-section p {
@@ -309,6 +309,93 @@ body * {
   color: var(--text);
 
   margin: 1rem 0;
+}
+
+/* Estilização sessão projetos */
+
+.container-projects {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container-slider {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid red;
+}
+
+.container-slider-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid blue;
+
+  overflow-x: scroll !important;
+  gap: 1rem;
+}
+/* Estilização do footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 100%;
+  padding: 1.5rem;
+
+  background: var(--background-dark);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.footer-content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.footer-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+  margin: 1.5rem 0rem;
+}
+
+.footer-social-media-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social-media-icons a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 1.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: var(--text-light);
+  margin: 1.5rem 0;
+  border-radius: 10px;
+}
+
+.footer-content span {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Estilização do botão ScrollUp */
@@ -321,7 +408,7 @@ body * {
 
   background: none;
   border: none;
-  color: var(--text);
+  color: var(--button-hover);
   font-size: 2.5rem;
 
   cursor: pointer;
