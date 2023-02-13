@@ -39,12 +39,32 @@ activeLink.forEach((link) => {
 })
 
 
-var slides = document.querySelectorAll(".slide")
-var currentSlide = 0
-var slideInterval = setInterval(nextSlide, 3000)
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-function nextSlide() {
-  slides[currentSlide].classList.remove("active")
-  currentSlide = (currentSlide + 1) % slides.length
-  slides[currentSlide].classList.add("active")
-}
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
+})

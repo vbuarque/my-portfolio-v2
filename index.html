@@ -3,6 +3,9 @@
 
 <head>
 
+  <link href="
+https://cdn.jsdelivr.net/npm/swiper@9.0.4/swiper-bundle.min.css
+" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -103,76 +106,74 @@
   </div>
 
   <div class="container-projects" id="portfolio">
-    <div class="container-slider">
-      <div class="container-slider-items">
-        <div class="slide active">
-          <div class="slider-item">
-            <img src="./assets/images/Projeto1.png" alt="Imagem do projeto 1">
-            <div class="slider-item-content">
-              <h1>Titulo do projeto</h1>
-              <p>Descrição do projeto</p>
-              <a href="#">Ver projeto</a>
-            </div>
-          </div>
-        </div>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
 
-        <div class="slide active">
-          <div class="slider-item">
-            <img src="./assets/images/Projeto1.png" alt="Imagem do projeto 1">
-            <div class="slider-item-content">
-              <h1>Titulo do projeto</h1>
-              <p>Descrição do projeto</p>
-              <a href="#">Ver projeto</a>
+              <div class="card-image">
+                <img src="./assets/images/CapaDevLinks.png" alt="" class="card-img">
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="slide active">
-          <div class="slider-item">
-            <img src="./assets/images/Projeto1.png" alt="Imagem do projeto 1">
-            <div class="slider-item-content">
-              <h1>Titulo do projeto</h1>
-              <p>Descrição do projeto</p>
-              <a href="#">Ver projeto</a>
-            </div>
-          </div>
-        </div>
+            <div class="card-content">
+              <h2 class="name">David Dell</h2>
+              <p class="description">The lorem text the section that contains header with having open functionality.
+                Lorem
+                dolor sit amet consectetur adipisicing elit.</p>
 
-        <div class="slide active">
-          <div class="slider-item">
-            <img src="./assets/images/Projeto1.png" alt="Imagem do projeto 1">
-            <div class="slider-item-content">
-              <h1>Titulo do projeto</h1>
-              <p>Descrição do projeto</p>
-              <a href="#">Ver projeto</a>
+              <button class="button">View More</button>
             </div>
           </div>
-        </div>
 
-        <div class="slide active">
-          <div class="slider-item">
-            <img src="./assets/images/Projeto1.png" alt="Imagem do projeto 1">
-            <div class="slider-item-content">
-              <h1>Titulo do projeto</h1>
-              <p>Descrição do projeto</p>
-              <a href="#">Ver projeto</a>
-            </div>
-          </div>
-        </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
 
-        <div class="slide active">
-          <div class="slider-item">
-            <img src="./assets/images/Projeto1.png" alt="Imagem do projeto 1">
-            <div class="slider-item-content">
-              <h1>Titulo do projeto</h1>
-              <p>Descrição do projeto</p>
-              <a href="#">Ver projeto</a>
+              <div class="card-image">
+                <img src="./assets/images/CapaMiau.png" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">David Dell</h2>
+              <p class="description">The lorem text the section that contains header with having open functionality.
+                Lorem
+                dolor sit amet consectetur adipisicing elit.</p>
+
+              <button class="button">View More</button>
             </div>
           </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+               <img src="./assets/images/CapaRocketHelp.png" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">David Dell</h2>
+              <p class="description">The lorem text the section that contains header with having open functionality.
+                Lorem
+                dolor sit amet consectetur adipisicing elit.</p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+          
+          
         </div>
-        
       </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
     </div>
+
   </div>
 
   <footer>
@@ -206,6 +207,9 @@
     <ion-icon name="chevron-up-outline" class="icon"></ion-icon>
   </button>
 </body>
+<script src="
+https://cdn.jsdelivr.net/npm/swiper@9.0.4/swiper-bundle.min.js
+"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="./js/script.js"></script>
